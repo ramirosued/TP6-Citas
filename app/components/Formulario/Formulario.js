@@ -1,8 +1,10 @@
 import './Formulario.css';
 
 
-function Formulario({setCitas, citas}) {
+function Formulario({setCitas, citas, name, name1, fecha, hora, sintomas, tipo, tipo1}) {
 
+    let ir;
+    
     const crearCita = (e) => {
         e.preventDefault();
         const confirmBoton = window.confirm('¿Deseas agregar la cita?')
@@ -23,18 +25,22 @@ function Formulario({setCitas, citas}) {
         }
         
     }
+   
+    if(tipo==='Date'){
+        ir = crearCita
+    }
 
     return (
-        <form name="form" onSubmit={crearCita}>
-            <label>Nombre mascota</label>
+        <form name="form" onSubmit={ir}>
+            <label>{name}</label>
             <input type="text" name="nombre" placeholder="Nombre mascota" required></input>
-            <label>Nombre dueño</label>
+            <label>{name1}</label>
             <input type="text" name="nombreDueño" resource='' placeholder="Nombre dueño de la mascota" required></input>
-            <label>Fecha</label>
-            <input type="date" name="fecha" required></input>
-            <label>Hora</label>
-            <input type="time" name="hora" required></input>
-            <label>Sintomas</label>
+            <label>{fecha}</label>
+            <input type={tipo} name="fecha" required></input>
+            <label>{hora}</label>
+            <input type={tipo1} name="hora" required></input>
+            <label>{sintomas}</label>
             <textarea name="sintomas" required></textarea>
             <button type="submit">AGREGAR CITA</button>
         </form>

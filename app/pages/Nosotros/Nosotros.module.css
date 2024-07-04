@@ -1,0 +1,37 @@
+.contenedorNosotros{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 50px;
+    
+}
+.integrante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: white;
+    width: 300px;
+    border-radius: 16px;
+    gap: 20px;
+}
+.contenedorNosotros{
+    display: flex;
+    justify-content: center;
+}
+.contenedorSobreNosotros{
+
+    padding: 50px;
+    margin-top: 1%;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.HR{
+    height: 7px;
+    color: white;
+    border-radius: 4px;
+    width: 20%;
+    margin-bottom: -10px;
+}

@@ -1,3 +1,7 @@
-.titulo{
-    
-}
+
+.contenedorFoto{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;   
+    margin-bottom: 5%;
+   }
