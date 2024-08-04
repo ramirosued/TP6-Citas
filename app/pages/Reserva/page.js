@@ -13,7 +13,7 @@ export default function Reserva() {
             <div className='container'>
                 <div className='column'>
                   <Subtitulo texto={'CREAR MI CITA'}></Subtitulo>
-                  <Formulario citas={citas} setCitas={setCitas} name={'Nombre mascota'} name1={'Nombre dueño'} fecha={'Fecha'} hora={'Hora'} sintomas={'Sintomas'} tipo={'Date'} tipo1={'Time'}></Formulario>
+                  <Formulario citas={citas} setCitas={setCitas} name={'Nombre mascota'} name1={'Nombre dueño'} fecha={'Fecha'} hora={'Hora'} sintomas={'Sintomas'} tipo={'Date'} tipo1={'Time'} submit={"AGREGAR CITA"}></Formulario>
                 </div>
                 <div className='column'>
                   <Subtitulo texto={'ADMINISTRA TUS CITAS'}></Subtitulo>

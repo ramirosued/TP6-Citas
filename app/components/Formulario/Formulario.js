@@ -1,7 +1,7 @@
 import './Formulario.css';
 
 
-function Formulario({setCitas, citas, name, name1, fecha, hora, sintomas, tipo, tipo1}) {
+function Formulario({setCitas, citas, name, name1, fecha, hora, sintomas, tipo, tipo1, submit}) {
 
     let ir;
     
@@ -42,7 +42,7 @@ function Formulario({setCitas, citas, name, name1, fecha, hora, sintomas, tipo, 
             <input type={tipo1} name="hora" required></input>
             <label>{sintomas}</label>
             <textarea name="sintomas" required></textarea>
-            <button type="submit">AGREGAR CITA</button>
+            <button type="submit">{submit}</button>
         </form>
         
     )
